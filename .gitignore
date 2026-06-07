@@ -1,0 +1,11 @@
+# Monorepo gitignore for @scheduleme/embed-react.
+#
+# `dist/` is gitignored HERE because the build output doesn't need to
+# live in the monorepo's history — the release script rebuilds it and
+# pushes the result to the standalone publish repo. In the published
+# repo `dist/` is committed (consumers install raw via git, so a
+# pre-built dist/ is required).
+dist
+node_modules
+tsconfig.tsbuildinfo
+.DS_Store

@@ -1,0 +1,52 @@
+{
+    "name": "@Nexios-Pty-Ltd/embed-react",
+    "version": "0.1.0",
+    "description": "Typed React components for the ScheduleME booking widget. Wraps the vanilla embed loader so React apps get full intellisense + SSR-safe defaults.",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "src",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepack": "npm run build",
+        "lint": "eslint src --ext .ts,.tsx",
+        "release:github": "bash ./scripts/release-to-github.sh"
+    },
+    "peerDependencies": {
+        "react": "^17 || ^18 || ^19"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "scheduleme",
+        "booking",
+        "embed",
+        "react",
+        "scheduling",
+        "calendar",
+        "appointments"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Nexios-Pty-Ltd/embed-react.git"
+    },
+    "homepage": "https://github.com/Nexios-Pty-Ltd/embed-react#readme",
+    "bugs": {
+        "url": "https://github.com/Nexios-Pty-Ltd/embed-react/issues"
+    }
+}
